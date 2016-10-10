@@ -91,9 +91,9 @@ def get_text(page): #getting plain text here
     header = (''.join(headerreg.findall(page)))
     textdata.append(header)
     rawtextdata = articlereg.findall(page)      
-    for el in rawtextdata:
-        curline = re.sub('("><span lang="ru-RU|<.*?>|&.*?;|\**)', '', el)
-        textdata.append(curline.strip())
+    for el in rawtextdata:                                                      #hot fix for <br> tag here replacing line 95 with following two
+        curline = re.sub('("><span lang="ru-RU|<.*?>|&.*?;|\**)', '', el)       #h_curline = re.sub('<br>', '\n', el)
+        textdata.append(curline.strip())                                        #curline = re.sub('("><span lang="ru-RU|<.*?>|&.*?;|\**)', '', h_curline)
 
     return textdata 
 
