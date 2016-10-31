@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lang list</title>
+</head>
+<body>
+<ul>
+    {% for lang, ind in langs.items() %}
+        <li>{{ lang }} - {{ ind }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
