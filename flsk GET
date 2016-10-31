@@ -1,0 +1,43 @@
+from flask import Flask, render_template, request, redirect, url_for
+
+app = Flask(__name__)
+
+ld = {}
+llist = open('l.txt', 'r').readlines()
+for line in llist:
+    ld[line.split(',')[0]] = line.split(',')[1]
+
+@app.route('/form')
+def pform():
+    if 'langname' not in request.args:
+        return render_template('fm.html')
+    #elif request.args[langname] in ld:
+    else:
+        curlang = request.args[langname] 
+        return render_template('l.html', langname=langname) 
+    
+@app.route('/not_found')
+def err(curlang):
+    return curlang + 'not found'
+        
+
+
+@app.route('/')
+def mpage():
+    return render_template('ls.html', langs=ld)
+
+@app.route('/langs/<code>')
+def langind(code):
+    srtd = {}
+    srt = [el for el in ld if code == ld[el][:len(code)]]
+    for it in srt:
+        srtd[it] = ld[it]
+    return render_template('ls.html', langs=srtd)
+
+@app.route('/form')
+def form():
+    return render_template('fm.html')
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
