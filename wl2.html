@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Output</title>
+	<style> li{font-family:"Century Gothic", cursive; font-size: 15px}
+	</style>
+</head>
+<body>
+<ul>
+    {% for s in wdl %}
+        <li>
+		{% for w in s %}
+			{% if w == wd1 %}
+				<p style="font-family:"Century Gothic", cursive; font-size: 15px; color:red">{{w}}}</p>
+			{% elif w == wd2 %}
+				<p style="font-family:"Century Gothic", cursive; font-size: 15px; color:red">{{w}}}</p>
+			{% else %}
+				<p>{{w}}</p>
+			{% endif %}
+		</li>
+		{% endfor %}
+    {% endfor %}
+</ul>
+</body>
+</html>
