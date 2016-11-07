@@ -22,7 +22,7 @@ def srch(x):
 @app.route('/')
 def sform():
     if 'wd' not in request.args:
-        return render_template('fm.html')
+        return render_template('fm2.html')
     else:
         curwd = request.args['wd']
         fout = open('2.txt', 'w')
