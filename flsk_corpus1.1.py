@@ -19,7 +19,6 @@ def srch(x):
     out = [x.split() for x in rawout]
     return out
 
-#print(srch('болконский'))
 @app.route('/')
 def sform():
     if 'wd' not in request.args:
