@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>json data</title>
+</head>
+<body>
+{% for bl in jsnd.split('#') %}
+	<p>{{ bl.split(';')[0] }}<br>{{ bl.split(';')[1] }}<br></p>
+{% endfor %}
+<br>
+<br>
+<p><a href="http://127.0.0.1:5000/stats">Статистика</a></p>
+<p><a href="http://127.0.0.1:5000/search">Поиск</a></p>
+<p><a href="http://127.0.0.1:5000/json">JSON</a></p>
+<p><a href="http://127.0.0.1:5000/">Вернуться на главную</a></p>
+</body>
+</html>

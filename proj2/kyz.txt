@@ -1,0 +1,13 @@
+t1:iT all
+t2:staR
+t3:holD you
+t4:flY
+t5:wriTings
+t6:rOck
+t7:sKinny Kiss
+t8:blEAched bItter
+t9:uNforgiven uNtapped
+t10:drEss trAck
+engexp:Experience
+natlang:Native Language
+ent:Media Engaged

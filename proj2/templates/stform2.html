@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>stats</title>
+	<style>
+	.mk{font-family:"Calibri", serif; font-size: 17px; font-weight: 500; background: #00FF00; padding: 1px}
+	td{font-family:"Calibri", serif; font-size: 17px; font-weight: 500}
+	th{font-family:"Calibri", serif; font-size: 18px; font-weight: 500}
+	</style>
+</head>
+<body>
+<table border="1">
+<tr>
+	<th>Experiment №</th>
+	{% for el in reslst[0].split(';') %}
+	<td>{{ el }}</td>
+	{% endfor %}
+</tr>
+<tr>
+	<th>Native Language</th>
+	{% for el in reslst[1].split(';') %}
+	<td>{{ el }}</td>
+	{% endfor %}
+</tr>
+<tr>
+	<th>Experience</th>
+	{% for el in reslst[2].split(';') %}
+	<td>{{ el }}</td>
+	{% endfor %}
+</tr>
+<tr>
+	<th>Prefered Media</th>
+	{% for el in reslst[3].split(';') %}
+	<td>{{ el }}</td>
+	{% endfor %}
+</tr>
+<tr>
+	<th>1. i<span class="mk">T</span> all</th>
+	{% for el in reslst[4].split(';') %}
+	<td>{{ el }}</td>
+	{% endfor %}
+</tr>
+<tr>
+	<th>2. sta<span class="mk">R</span></th>
+	{% for el in reslst[5].split(';') %}
+	<td>{{ el }}</td>
+	{% endfor %}
+</tr>
+<tr>
+	<th>3. hol<span class="mk">D</span> you</th>
+	{% for el in reslst[6].split(';') %}
+	<td>{{ el }}</td>
+	{% endfor %}
+</tr>
+<tr>
+	<th>4. fl<span class="mk">Y</span></th>
+	{% for el in reslst[7].split(';') %}
+	<td>{{ el }}</td>
+	{% endfor %}
+</tr>
+<tr>
+	<th>5. wri<span class="mk">T</span>ings</th>
+	{% for el in reslst[8].split(';') %}
+	<td>{{ el }}</td>
+	{% endfor %}
+</tr>
+<tr>
+	<th>6. r<span class="mk">O</span>ck</th>
+	{% for el in reslst[9].split(';') %}
+	<td>{{ el }}</td>
+	{% endfor %}
+</tr>
+<tr>
+	<th>7. [<span class="mk">k</span>]/[<span class="mk">k(h)</span>]</th>
+	{% for el in reslst[10].split(';') %}
+	<td>{{ el }}</td>
+	{% endfor %}
+</tr>
+<tr>
+	<th>8. [<span class="mk">i:</span>]/[<span class="mk">ɪ</span>]</th>
+	{% for el in reslst[11].split(';') %}
+	<td>{{ el }}</td>
+	{% endfor %}
+</tr>
+<tr>
+	<th>9. [<span class="mk">ɱ</span>]/[<span class="mk">n</span>]</th>
+	{% for el in reslst[12].split(';') %}
+	<td>{{ el }}</td>
+	{% endfor %}
+</tr>
+<tr>
+	<th>10. [<span class="mk">ɛ</span>]/[<span class="mk">æ</span>]</th>
+	{% for el in reslst[13].split(';') %}
+	<td>{{ el }}</td>
+	{% endfor %}
+</tr>
+</table>
+<br>
+<br>
+<p><a href="http://127.0.0.1:5000/search">Поиск</a></p>
+<p><a href="http://127.0.0.1:5000/json">JSON</a></p>
+<p><a href="http://127.0.0.1:5000/">Вернуться на главную</a></p>
+</body>
+</html>

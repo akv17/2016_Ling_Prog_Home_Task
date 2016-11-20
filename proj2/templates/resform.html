@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>results</title>
+	<style>
+	.pt{font-family:"Century Gothic", serif; font-size: 16px}
+	.rt{font-family:"Calibri", serif; font-size: 17px; font-weight: 500}
+	span.mk{font-family:"Calibri", serif; font-size: 17px; font-weight: 500; background: #00FF00; padding: 1px}
+	</style>
+</head>
+<body>
+<p class="rt">Результат:</p>
+<ul>
+{% if trgt | length == 0 -%}
+	<p class="pt">По запросу {{ req }} ничего не найдено.</p>
+{% else -%}
+	{% for i in range(trgt|length) -%}
+		<li>
+		<p class="rt">
+		{{ i + 1}}. 
+		{% for s in trgt[i] -%}
+			{% if s.isupper() == True -%}
+				<span class="mk">{{ s }}</span>
+			{% else -%}
+				{{s}}
+			{%- endif %}
+		{%- endfor %}
+		 : 
+		{% for rs in req -%}
+			{% if rs.isupper() == True -%}
+				<span class="mk">{{ rs }}</span>
+			{% else -%}
+				{{rs}}
+			{%- endif %}
+		{%- endfor %}
+ 		</li>
+	{%- endfor %}
+{%- endif %}
+</ul>
+<br>
+<br>
+<p><a href="http://127.0.0.1:5000/ipa">IPA</a></p>
+<p><a href="http://127.0.0.1:5000/search">Поиск</a></p>
+<p><a href="http://127.0.0.1:5000/stats">Статистика</a></p>
+<p><a href="http://127.0.0.1:5000/json">JSON</a></p>
+<p><a href="http://127.0.0.1:5000/">Вернуться на главную</a></p>
+</body>
+</html

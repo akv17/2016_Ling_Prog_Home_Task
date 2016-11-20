@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eng phnl form</title>
+	<style>
+		p.hd{font-family:"Elephant", serif; font-size: 20px}
+		p.pt{font-family:"Century Gothic", serif; font-size: 15px}
+		p.hinft{font-family:"Century Gothic", serif; font-size: 15px; font-weight: 600}
+		p.hrulz{font-family:"Century Gothic", cursive; font-size: 15px; font-weight: 600; font-style: italic}
+		p.rulz{font-family:"Century Gothic", cursive; font-size: 13px; font-style: italic}
+	    #tgm{font-family:"Elephant", cursive; font-size: 17px; font-style: italic}
+		.tt{font-family:"Calibri", serif; font-size: 18px; font-weight: 500}
+		.mk{font-family:"Calibri", serif; font-size: 17px; font-weight: 500; background: #00FF00; padding: 1px}
+		span.inft{font-family:"Century Gothic", serif; font-size: 13px}
+		span.tansw{font-family:"Calibri", serif; font-size: 17px; font-weight: 500}
+		span.snd{font-family:"Calibri", serif; font-size: 17px; font-weight: 500}
+		audio{background: white; padding-left: 30px}
+	</style>
+</head>
+<body>
+	<meta charset="UTF-8">
+<p class="hd">Self-reflecting English Phonetics:</p>
+<p class="pt">Данная анкета представляет из себя одно из возможных средств отразить некоторые особенности фонетики английского языка (без учета диалектных вариаций) в исполнении неносителей английского.</p>
+<p class="pt">Вам будет предложено ответить на 10 вопросов, опираясь на собственный слух и опыт владения английским языком. Каждый вопрос представляет из себя самостоятельную фразу. Внутри фразы цветом выделена позиция, фонетическую реализацию которой Вам предлагается определить.</p>
+<p class ="pt">Важно понимать, что целью анкетирования является отражение Ваших фонетических реализаций, а отнюдь не тестирование на "правильное" произношение.</p>
+<p class="pt">Также, возможно, следующие несколько простых рекомендаций помогут Вам оптимизировать ход эксперимента:<br>
+			<ul>
+				<li>
+					<p class="hrulz">Не спешите с ответом, возможно, стоит:<br>
+						<ul>
+						<li>
+						<p class="rulz">Произнести предлагаемую фразу разными темпами
+						</li>
+						<li>
+						<p class="rulz">Попытаться понять, как Вы произносите данный звук изолировано
+						</li>
+						<li>
+						<p class="rulz">Попытаться произнести данный звук при ином схожем фонетическом окружении
+						</li>
+						</ul>
+					</p>
+				</li>
+			</ul>
+			</p>
+			</p>
+			</p>
+</body>
+<form>
+<br>
+<p class="pt">Прежде чем приступить к эксперименту, пожалуйста, заполните нижеследующие информационные поля:</p>
+<br> 
+<li>
+	<p class="hinft">Ваш родной язык:<br>
+			<ul>
+			<input type="text" name="natlang">
+			</ul>
+	</p>
+</li>
+<li>
+		<p class="hinft">Как долго Вы владеете английским:<br>
+			<ul>
+			<input type="radio" name="engexp" value="-2"><span class="inft">Менее 2-ух лет</span><br>
+			<input type="radio" name="engexp" value="+2-5"><span class="inft">От 2-ух до 5-ти лет</span><br>
+			<input type="radio" name="engexp" value="+5-10"><span class="inft">От 5-ти до 10-ти лет</span><br>
+			<input type="radio" name="engexp" value="10+"><span class="inft">Более 10-ти лет</span>
+			</ul>
+		</p>
+</li>
+<li>
+		<p class="hinft">Взаимодействие с англояз. медиа:<br>
+			<ul>
+			<input type="radio" name="ent" value="audio"><span class="inft">Аудио (музыка, аудиокниги и т.п.)</span><br>
+			<input type="radio" name="ent" value="video"><span class="inft">Видео (фильмы, ТВ и т.п.)</span><br>
+			<input type="radio" name="ent" value="social"><span class="inft">Социо (новости, интервью и т.п.)</span><br>
+			<input type="radio" name="ent" value="none"><span class="inft">Нет</span>
+			</ul>
+		</p>
+</li>
+<br>
+<p class="pt">Ход эксперимента:<br>
+				Даны фразы на английском. Для фраз 1-6 выберите из предложенных вариантов тот звук, который, как Вам кажется, Вы произносите в выделенной цветом позиции.
+</p>
+<p><a href="http://127.0.0.1:5000/ipa" style="font-size: 18px; font-weight:bald">Нажмите здесь, чтобы прослушать представленные звуки (пожалуйста, открывайте в новой вкладке!)</a></p>
+<li>
+	<p class="tt">1. Say i<span class="mk">t </span>all<br>
+			<ul>
+			<input type="radio" name="t1" value="[t]"><span class="tansw">[t]</span><br>
+			<input type="radio" name="t1" value="[r]"><span class="tansw">[r]</span><br>
+			<input type="radio" name="t1" value="[ɾ]"><span class="tansw">[ɾ]</span><br>
+			<input type="radio" name="t1" value="[ɹ]"><span class="tansw">[ɹ]</span>
+			</ul>
+	</p>
+</li>
+<li>
+	<p class="tt">2. Another st<span class="mk">ar</span> you fade away<br>
+			<ul>
+			<input type="radio" name="t2" value="[ɑr]"><span class="tansw">[ɑr]</span><br>
+			<input type="radio" name="t2" value="[ɑ:]"><span class="tansw">[ɑ:]</span><br>
+			<input type="radio" name="t2" value="[ɑ]"><span class="tansw">[ɑ]</span><br>
+			<input type="radio" name="t2" value="[ɑɹ]"><span class="tansw">[ɑɹ]</span>
+			</ul>
+	</p>
+</li>
+<li>
+	<p class="tt">3. Hol<span class="mk">d </span>you tightly<br>
+			<ul>
+			<input type="radio" name="t3" value="[d]"><span class="tansw">[d]</span><br>
+			<input type="radio" name="t3" value="[d']"><span class="tansw">[d']</span><br>
+			<input type="radio" name="t3" value="[/dʒ/']"><span class="tansw">[/dʒ/']</span><br>
+			<input type="radio" name="t3" value="[/tʃ/']"><span class="tansw">[/tʃ/']</span></audio>
+			</ul>
+	</p>
+</li>
+<li>
+	<p class="tt">4. Fl<span class="mk">y</span> by night only<br>
+			<ul>
+			<input type="radio" name="t4" value="[ɑ]"><span class="tansw">[ɑ]</span><br>
+			<input type="radio" name="t4" value="[aɪ]"><span class="tansw">[aɪ]</span><br>
+			<input type="radio" name="t4" value="[a]"><span class="tansw">[a]</span><br>
+			<input type="radio" name="t4" value="[ɑɪ]"><span class="tansw">[ɑɪ]</span><br>
+			<span class="tansw">*** [ɪ] - [+high; +front; -tense; -weak; -rounded]</span>
+			</ul>
+	</p>
+</li>
+<li>
+	<p class="tt">5. Practising numerous 'wr[ɪ]<span class="mk">tt</span>ings<br>
+			<ul>
+			<input type="radio" name="t5" value="[ɹ]"><span class="tansw">[ɹ]</span><br>
+			<input type="radio" name="t5" value="[ʔ]"><span class="tansw">[ʔ]</span><br>
+			<input type="radio" name="t5" value="[t]"><span class="tansw">[t]</span><br>
+			<input type="radio" name="t5" value="[ɾ]"><span class="tansw">[ɾ]</span>
+			</ul>
+	</p>
+</li>
+<li>
+	<p class="tt">6. That's r<span class="mk">o</span>ck bottom<br>
+			<ul>
+			<input type="radio" name="t6" value="[ɒ]"><span class="tansw">[ɒ]</span><br>
+			<input type="radio" name="t6" value="[o]"><span class="tansw">[o]</span><br>
+			<input type="radio" name="t6" value="[o:]"><span class="tansw">[o:]</span><br>
+			<input type="radio" name="t6" value="[ɑ]"><span class="tansw">[ɑ]</span>
+			</ul>
+	</p>
+</li>
+<p class="pt">Для фраз 7-10 выберите из предложенных вариантов ответ на поставленный в условии вопрос. По желанию Вы также можете заполнять необязательное поле "Комментарий" для каждого из вопросов, в котором Вы можете оставить свои размышления/сомнения/вопросы/пожелания и т.д.<p>
+<li>
+	<p class="pt">7. Одинаковы ли звуки в отмеченных позициях?</p>
+			<ul>
+			<p class="tt">S<span class="mk">k</span>inny love / A silent <span class="mk">k</span>iss<br>
+		    <ul>
+				<input type="radio" name="t7" value="equal"><span class="tansw">Да</span><br>
+				<input type="radio" name="t7" value="diff."><span class="tansw">Нет</span><br>
+				<input type="radio" name="t7" value="none"><span class="tansw">Затрудняюсь ответить</span><br>
+				<span class="tansw">Комментарий: </span><input type="text" name="t7_com"><br>
+			</ul>
+			</ul>
+	</p>
+</li>
+<li>
+	<p class="pt">8. Одинаковы ли звуки в отмеченных позициях?</p>
+			<ul>
+			<p class="tt">From bl<span class="mk">ea</span>ched white to a deep blue / B<span class="mk">i</span>tter cold<br>
+			<ul>
+			<input type="radio" name="t8" value="equal"><span class="tansw">Да</span><br>
+			<input type="radio" name="t8" value="diff."><span class="tansw">Нет</span><br>
+			<input type="radio" name="t8" value="none"><span class="tansw">Затрудняюсь ответить</span><br>
+			<span class="tansw">Комментарий: </span><input type="text" name="t8_com"><br>
+			</ul>
+			</ul>
+	</p>
+</li>
+<li>
+	<p class="pt">9. Одинаковы ли звуки в отмеченных позициях?</p>
+			<ul>
+			<p class="tt">So I dub the u<span class="mk">n</span>forgiven / U<span class="mk">n</span>tapped pre-glottalized stop<br>
+			<ul>
+			<input type="radio" name="t9" value="equal"><span class="tansw">Да</span><br>
+			<input type="radio" name="t9" value="diff."><span class="tansw">Нет</span><br>
+			<input type="radio" name="t9" value="none"><span class="tansw">Затрудняюсь ответить</span><br>
+			<span class="tansw">Комментарий: </span><input type="text" name="t9_com"><br>
+			</ul>
+			</ul>
+	</p>
+</li>
+<li>
+	<p class="pt">10. Одинаковы ли звуки в отмеченных позициях?</p>
+			<ul>
+			<p class="tt">A flowy dr<span class="mk">e</span>ss with a necklace / Decompressed raw audio tr<span class="mk">a</span>ck<br>
+			<ul>
+			<input type="radio" name="t10" value="equal"><span class="tansw">Да</span><br>
+			<input type="radio" name="t10" value="diff."><span class="tansw">Нет</span><br>
+			<input type="radio" name="t10" value="none"><span class="tansw">Затрудняюсь ответить</span><br>
+			<span class="tansw">Комментарий: </span><input type="text" name="t10_com"><br>
+			</ul>
+			</ul>
+	</p>
+</li>
+<p><input type="submit"></p>
+</form>
+</html>

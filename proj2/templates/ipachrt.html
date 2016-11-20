@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ipa</title>
+	<style>
+	audio{background: white; padding-left: 30px}
+	p.tansw{font-family:"Calibri", serif; font-size: 20px; font-weight: 500}
+	</style>
+</head>
+<body>
+<p>[r]<audio controls><source src={{ url_for("static", filename = "r_trill.wav")}} type="audio/wav"></audio></p>
+<p>[ɾ]<audio controls><source src={{ url_for("static", filename = "r_tap.wav")}} type="audio/wav"></audio></p>
+<p>[ɹ]<audio controls><source src={{ url_for("static", filename = "r_flap.wav")}} type="audio/wav"></audio></p>
+<p>[ɑ]<audio controls><source src={{ url_for("static", filename = "a_back.wav")}} type="audio/wav"></audio></p>
+<p>[/tʃ/']<audio controls><source src={{ url_for("static", filename = "tsch.wav")}} type="audio/wav"></audio></p>
+<p>[/dʒ/']<audio controls><source src={{ url_for("static", filename = "dzh.wav")}} type="audio/wav"></audio></p>
+<p>[a]<audio controls><source src={{ url_for("static", filename = "a_mid.wav")}} type="audio/wav"></audio></p>
+<p>[ɪ]<audio controls><source src={{ url_for("static", filename = "i_untensed.wav")}} type="audio/wav"></audio></p>
+<p>[ʔ]<audio controls><source src={{ url_for("static", filename = "glot.wav")}} type="audio/wav"></audio></p>
+<p>[ɒ]<audio controls><source src={{ url_for("static", filename = "a_back_rnd.wav")}} type="audio/wav"></audio></p>
+<p>[o]<audio controls><source src={{ url_for("static", filename = "o.wav")}} type="audio/wav"></audio></p>
+<br>
+<p><a href="http://127.0.0.1:5000/">Вернуться</a></p>
+</body>
+</html>
