@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>search</title>
+	<style>
+	.pt{font-family:"Century Gothic", serif; font-size: 16px}
+	</style>
+</head>
+<body>
+<p class="pt">Поиск ведется по всем полученным экспериментальным данным.<br>
+Доступны два режима:<br>
+<ul>
+	<li><p class="pt">Поиск конкретного звука: выдача состоит из всех фраз, ответом на которые числится искомый звук<p></li>
+	<li><p class="pt">Поиск по ключевому слову/*словам: выдача состоит из всех полученных ответов для данного ключевого слова/*слов<p></li>
+	</ul>
+</p>
+<form>
+<p class="pt">Найти:</p>
+	<ul>
+	<input type="text" name="trgt"><br>
+	<input type="radio" name="srch_t" value="s"><span class="pt">Звук</span>
+	<input type="radio" name="srch_t" value="ph"><span class="pt">Фраза</span>
+	<p><input type="submit" value="Найти"></p>
+	</ul>
+</form>
+<br>
+<br>
+<p style="font-family:'Century Gothic', serif; font-size: 15px; font-style: italic">*для получения результатов по вопросам 7-10 поисковый запрос должен обязательно содержать ключевую пару слов (например: "skinny kiss" и т.п.).
+<p><a href="http://127.0.0.1:5000/stats">Статистика</a></p>
+<p><a href="http://127.0.0.1:5000/json">JSON</a></p>
+<p><a href="http://127.0.0.1:5000/">Вернуться на главную</a></p>
+</body>
+</html>
