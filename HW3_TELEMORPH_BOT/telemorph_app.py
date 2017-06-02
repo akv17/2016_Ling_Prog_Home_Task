@@ -21,15 +21,15 @@ wds = open(r'/home/akv17/mysite/dictr.txt', 'r', encoding='utf-8').read().split(
 # initialize dictionary
 wd = mrph.build_dict(wds)
 
-start_inf = 'Hi! This bot will reply you with a random twist of your input \
-following its original morphological structure.\n \
-Use "\help" to see additional info on operating.'
+start_inf = 'Hi! This bot will reply you with a random twist of your input' \
+            'following its original morphological structure.\n' \
+            'Use "\help" to see additional info on operating.'
 
-help_inf = 'Transform input string into randomized one following its original morphological structure.\n \
-You may want to use some of the following options:\n \
-        - Use "!d" key before input string for disabling disambiguation (faster)\n \
-        - Use "-g" key before input string to get the list of morpho-tags for each word inputed.\n \
-Please separate the keys with the space.\ne.g. "!d-g мама мыла раму", "!d кот видит собак"'
+help_inf = 'Transform input string into randomized one following its original morphological structure.\n' \
+            'You may want to use some of the following options:\n' \
+        '- Use "!d" key before input string for disabling disambiguation (faster)\n' \
+        '- Use "-g" key before input string to get the list of morpho-tags for each word inputed.\n' \
+        'Please separate the keys with the space.\ne.g. "!d-g мама мыла раму", "!d кот видит собак"'
 
 
 @bot.message_handler(commands=['start', 'help'])
