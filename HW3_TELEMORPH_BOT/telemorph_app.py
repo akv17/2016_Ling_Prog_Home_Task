@@ -16,7 +16,11 @@ app = flask.Flask(__name__)
 
 # load a dictionary for mrph
 wds = open(r'/home/akv17/mysite/dictr.txt', 'r', encoding='utf-8').read().split()
-#wds = mrph.get_dict(*path*, *n*)
+
+# mrph.get_dict() method could be used
+# for getting a dictionary from RusNatCorpora source-file (1grams-3.txt)
+# of desired length n
+# e.g. wds = mrph.get_dict(*path*, *n*)
 
 # initialize dictionary
 wd = mrph.build_dict(wds)
